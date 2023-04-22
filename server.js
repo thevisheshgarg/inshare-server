@@ -18,6 +18,10 @@ const corsOptions = {
 //     "optionsSuccessStatus": 204
 //   }
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 app.use(cors(corsOptions));
 app.use(express.static('public'));
 
